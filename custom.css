@@ -1,0 +1,102 @@
+/* .
+BLV theme for mainsail - including BLV accent colors.
+*/
+
+:root {
+    --Primary:        #ff0072;    /*BLV:GlowPink*/
+    --Secondary:      #a9004c;    /*BLV:CurrentLine*/
+    --Green:          #50fa7b;    /*BLV:Green*/
+    --Red:            #dc0000;    /*BLV:Red*/
+    --Warnings:       #ffb86c;    /*BLV:Orange*/
+    --Text:           #eeeeee;    /*BLV:Foreground*/
+    --DarkerText:     #cccccc;    
+    --Background:     #44475a;    /*BLV:CurrentLine*/
+    --DarkBackground: #282a36;    /*BLV:Background*/
+    --Toolbars:       #44475a;    /*BLV:CurrentLine*/
+    --Sheets:         #282a36;    /*BLV:Background*/
+}
+
+/* Change Primary color */
+.v-application .primary {
+    background-color: var(--Primary) !important;
+    border-color: var(--Primary) !important;
+}
+.v-application .primary--text {
+    color: var(--Primary) !important;
+    caret-color: var(--Primary) !important;
+}
+.v-application .blue--text {
+    color: var(--Primary) !important;
+    caret-color: var(--Primary) !important;
+}
+.v-application .info {
+    background-color: var(--Primary) !important;
+    border-color: var(--Primary) !important;
+}
+.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)>.v-input__control>.v-input__slot:focus-within {
+    border: thin solid var(--Primary) !important;
+}
+.v-text-field.v-text-field--solo .v-input__control input {
+    caret-color: var(--Primary);
+}
+.theme--dark.v-color-picker .v-color-picker__input input {
+    border: thin solid var(--Primary);
+    color: var(--Text);
+}
+
+
+/* Change Secondary color */
+.v-application .secondary {
+    background-color: var(--Secondary) !important;
+    border-color: var(--Secondary) !important;
+}
+.theme--dark.v-chip {
+    color: var(--Text) !important;
+    background-color: var(--Secondary) !important;
+}
+
+
+
+/* Change Colors of toolbar & warning */
+
+#nav-header .v-toolbar__title {
+    font-size: 24px;
+    vertical-align: middle;
+    color: white;
+    font-family: monospace;
+}
+
+.v-application .warning {
+    background-color: #bf0067 !important;
+    border-color: #bf0067;
+}
+
+
+.v-application .error {
+    background-color: var(--Red) !important;
+    border-color: var(--Red) !important;
+}
+.v-toast__item--error{
+    background-color: var(--Red) !important;
+}
+
+
+/* Change Color of text */
+.v-btn__content .v-toolbar__title {
+    color: var(--Text) !important;
+}
+.text--darken-2 {
+    color: var(--Text) !important;
+}
+.subheading {
+    color: var(--Text) !important;
+}
+.theme--dark.v-icon, .v-btn__content, .v-text-field__suffix {
+    color: var(--Text) !important;
+}
+.theme--dark.v-input, .theme--dark.v-input input, .theme--dark.v-input textarea {
+    color: var(--Text) !important;
+}
+
+
+
